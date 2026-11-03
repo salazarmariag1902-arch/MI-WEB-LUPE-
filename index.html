@@ -1,0 +1,724 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071326">
+  <title>MI WEB ✦ LUPE</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,600;6..96,700;6..96,800;6..96,900&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <div id="cursorGlow" aria-hidden="true"></div>
+  <div id="progress" aria-hidden="true"></div>
+
+  <header class="navbar">
+    <a class="logo" href="#inicio">MI WEB <span>✦</span></a>
+    <button id="menuToggle" class="menu-toggle" type="button"
+      aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <nav id="nav" aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre">Sobre mí</a>
+      <a href="#gustos">Gustos</a>
+      <a href="#fandoms">Fandoms</a>
+      <a href="#intereses">Intereses</a>
+      <a href="#idiomas">Idiomas</a>
+      <a href="#mascotas">Mascotas</a>
+      <a href="#raices">Raíces</a>
+      <a href="#historia">Mi historia</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- PORTADA -->
+    <section class="hero" id="inicio">
+      <div class="hero-shade"></div>
+      <div class="hero-content reveal">
+        <p class="hero-greeting">HOLA, SOY</p>
+      
+
+<h1 class="lupe-title">
+  <img
+    src="./images/lupe.png"
+    alt="LUPE"
+    class="lupe-logo"
+  >
+</h1>
+
+
+        <blockquote class="hero-quote">
+          “La felicidad está hasta en los momentos más oscuros,
+          solo recuerda encender la luz.”
+          <cite>— Albus Dumbledore</cite>
+        </blockquote>
+        <p class="hero-subtitle">
+          CURIOSA <span>✦</span> INVESTIGADORA <span>✦</span> ANALÍTICA
+        </p>
+        <p class="hero-description">
+          Me encanta descubrir cosas nuevas, resolver problemas,
+          explorar historias y aprender algo diferente cada día.
+        </p>
+        <a class="glow-button" href="#sobre">
+          CONÓCEME <i class="fa-solid fa-arrow-down"></i>
+        </a>
+      </div>
+      <div class="hero-decoration" aria-hidden="true">
+        <span class="orbit orbit-one"></span>
+        <span class="orbit orbit-two"></span>
+        <i class="fa-solid fa-star floating-star star-one"></i>
+        <i class="fa-solid fa-star floating-star star-two"></i>
+        <i class="fa-solid fa-star floating-star star-three"></i>
+      </div>
+    </section>
+
+    <div class="cosmic-divider" aria-hidden="true">✦ ✧ ✦</div>
+
+    <!-- SOBRE MÍ -->
+    <section class="section about-section" id="sobre">
+      <div class="section-heading reveal">
+        <h2>UN POCO <em>SOBRE MÍ</em><b>✦</b></h2>
+        <p>Una pequeña introducción a quién soy.</p>
+      </div>
+
+      <div class="about-layout">
+        <div class="polaroid personal-polaroid glass-photo reveal"
+          style="--rotation:-4deg;--tape:#a6dfe4">
+          <span class="photo-tape"></span>
+  
+<div class="polaroid-photo photo-box">
+    <img src="images/lupe1.JPEG" alt="Fotografía de Lupe" class="lupe-foto">
+</div>
+
+          <span class="polaroid-caption">Yoo </span>
+        </div>
+
+        <div class="about-copy reveal">
+          <h3>SIEMPRE HAY ALGO <span>NUEVO</span> POR DESCUBRIR.</h3>
+          <p>
+            Soy Lupe. Me considero una persona curiosa,
+            investigadora y analítica. Disfruto hacer preguntas,
+            encontrar respuestas y enfrentar desafíos.
+          </p>
+          <p>
+            Me gusta leer, programar, tocar la guitarra, viajar,
+            aprender idiomas y desarrollar proyectos creativos.
+            También disfruto resolver problemas y descubrir
+            nuevas formas de hacer las cosas.
+          </p>
+          <div class="qualities">
+            <div class="quality"><i class="fa-solid fa-magnifying-glass"></i><span>INVESTIGAR</span></div>
+            <div class="quality"><i class="fa-solid fa-brain"></i><span>ANALIZAR</span></div>
+            <div class="quality"><i class="fa-solid fa-puzzle-piece"></i><span>RESOLVER</span></div>
+            <div class="quality"><i class="fa-solid fa-lightbulb"></i><span>APRENDER</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="cosmic-divider" aria-hidden="true">✧ ✦ ✧</div>
+
+    <!-- GUSTOS -->
+    <section class="section" id="gustos">
+      <div class="section-heading reveal">
+        <h2>COSAS QUE <em>ME GUSTAN:</em><b>✦</b></h2>
+      </div>
+
+      <!-- ARTISTAS FAVORITOS -->
+      <div class="subsection artists-section reveal">
+        <h3 class="editorial-title artists-title">
+          MIS <em>ARTISTAS FAVORITOS</em>
+        </h3>
+      
+<div class="vinyl-grid">
+
+  <!-- IMAGINE DRAGONS -->
+  <article class="vinyl-item">
+    <div class="vinyl-scene">
+      <div class="vinyl-disc"></div>
+      <div class="vinyl-cover vinyl-imagine"
+           style="background-image: url('./images/imagine.jpg'); background-size: cover; background-position: center;">
+      </div>
+    </div>
+
+    <h4>IMAGINE DRAGONS</h4>
+  </article>
+
+  <!-- MAROON 5 -->
+  <article class="vinyl-item">
+    <div class="vinyl-scene">
+      <div class="vinyl-disc"></div>
+      <div class="vinyl-cover vinyl-maroon"
+           style="background-image: url('./images/maroon.png'); background-size: cover; background-position: center;">
+      </div>
+    </div>
+
+    <h4>MAROON 5</h4>
+  </article>
+
+  <!-- BACILOS -->
+  <article class="vinyl-item">
+    <div class="vinyl-scene">
+      <div class="vinyl-disc"></div>
+      <div class="vinyl-cover vinyl-bacilos"
+           style="background-image: url('./images/bacilos.jpg'); background-size: cover; background-position: center;">
+      </div>
+    </div>
+
+    <h4>BACILOS</h4>
+  </article>
+
+</div>
+
+
+      <!-- LIBROS -->
+      <div class="subsection books-section reveal">
+        <h3 class="editorial-title">
+          ENTRE <em>PÁGINAS</em>
+          <i class="fa-solid fa-book-open accent-icon"></i>
+        </h3>
+        <p class="section-description">
+          Estas son algunas de mis sagas favoritas y que siempre me gustan leer de nuevo
+        </p>
+
+        <div class="books-grid">
+          <button class="book-item" type="button" data-book="Harry Potter">
+            <div class="book-cover photo-box">
+                 <img src="images/harry.jpg" alt="Harry Potter">
+            </div>
+            <span>Harry Potter</span>
+          </button>
+          <button class="book-item" type="button" data-book="Percy Jackson">
+            <div class="book-cover photo-box">
+                <img src="images/percy.jpg" alt="Percy Jackson">
+              <div class="photo-placeholder">PERCY JACKSON</div>
+            </div>
+            <span>Percy Jackson</span>
+          </button>
+          <button class="book-item" type="button" data-book="Los juegos del hambre">
+            <div class="book-cover photo-box">
+                <img src="images/sunrise.jpg" alt="Los juegos del hambre">
+              <div class="photo-placeholder">LOS JUEGOS DEL HAMBRE</div>
+            </div>
+            <span>Los juegos del hambre</span>
+          </button>
+          
+<button class="book-item" type="button" data-book="Sherlock Holmes">
+  <div class="book-cover photo-box">
+    <img src="images/sherlock.jpg" alt="Sherlock Holmes">
+    <div class="photo-placeholder">SHERLOCK HOLMES</div>
+  </div>
+  <span>Sherlock Holmes</span>
+</button>
+
+          <button class="book-item" type="button" data-book="Enola Holmes">
+            <div class="book-cover photo-box">
+                <img src="images/enola.jpg" alt="Enola Holmes">
+              <div class="photo-placeholder">ENOLA HOLMES</div>
+            </div>
+            <span>Enola Holmes</span>
+          </button>
+        </div>
+
+        <!-- HOMERO DESTACADO -->
+        <div class="classics-block">
+          <div class="classics-heading">
+            <h4>UN RINCÓN PARA<br><em>HOMERO</em> ✦</h4>
+            <p>
+              Dos obras que leí completas en verso:
+              <strong>La Odisea</strong> y <strong>La Ilíada</strong>.
+            </p>
+            <span class="homer-decoration">✧ ─── ✦ ─── ✧</span>
+          </div>
+ 
+<div class="classics-grid">
+
+  <button class="book-item classic-item" type="button" data-book="La Odisea">
+    <div class="book-cover photo-box">
+      <img src="images/odisea.jpg" alt="La Odisea de Homero">
+    </div>
+    <span>La Odisea</span>
+  </button>
+
+  <button class="book-item classic-item" type="button" data-book="La Ilíada">
+    <div class="book-cover photo-box">
+      <img src="images/iliada.jpg" alt="La Ilíada de Homero">
+    </div>
+    <span>La Ilíada</span>
+  </button>
+
+</div> <!-- Cierra classics-grid -->
+
+</div> <!-- Cierra classics-block -->
+
+      <!-- MUSICALES -->
+      <article class="musical-wave-card reveal">
+        <h3 class="editorial-title">MUSICALES <em>✦</em></h3>
+        <p class="musical-description">
+          Historias que cobran vida a través de la música.
+        </p>
+
+        <div class="musical-gallery">
+          <div class="polaroid musical-polaroid" tabindex="0"
+            data-musical="hamilton" style="--rotation:-5deg;--tape:#f1a6b1">
+            <span class="photo-tape"></span>
+            <div class="polaroid-photo photo-box">
+<img src="images/hamilton.jpg" alt="Hamilton">
+            </div>
+            <span class="polaroid-caption">HAMILTON</span>
+          </div>
+          <div class="polaroid musical-polaroid" tabindex="0"
+            data-musical="epic" style="--rotation:4deg;--tape:#a6e5df">
+            <span class="photo-tape"></span>
+            <div class="polaroid-photo photo-box">
+<img src="images/epic.jpg" alt="EPIC: The Musical">
+            </div>
+            <span class="polaroid-caption">EPIC</span>
+          </div>
+          <div class="polaroid musical-polaroid" tabindex="0"
+            data-musical="six" style="--rotation:-3deg;--tape:#c5b1ff">
+            <span class="photo-tape"></span>
+            <div class="polaroid-photo photo-box">
+<img src="images/six.jpg" alt="SIX">
+            </div>
+            <span class="polaroid-caption">SIX</span>
+          </div>
+          <div class="polaroid musical-polaroid" tabindex="0"
+            data-musical="hadestown" style="--rotation:5deg;--tape:#f3df9a">
+            <span class="photo-tape"></span>
+            <div class="polaroid-photo photo-box">
+<img src="images/hadestown.jpg" alt="Hadestown">
+            </div>
+            <span class="polaroid-caption">HADESTOWN</span>
+          </div>
+          <div class="polaroid musical-polaroid" tabindex="0"
+            data-musical="heathers" style="--rotation:-4deg;--tape:#a6d6ff">
+            <span class="photo-tape"></span>
+            <div class="polaroid-photo photo-box">
+<img src="images/heathers.jpg" alt="Heathers">
+            </div>
+            <span class="polaroid-caption">HEATHERS</span>
+          </div>
+        </div>
+
+        <div class="sound-visualizer" aria-hidden="true">
+          <div class="sound-bars" id="soundBars"></div>
+        </div>
+        <div class="musical-bottom">
+          <span id="soundStatus">Pasa el cursor sobre un musical ✦</span>
+          <button id="soundToggle" class="sound-button" type="button">
+            <i class="fa-solid fa-volume-xmark"></i> Activar sonido
+          </button>
+        </div>
+        <audio id="musicalAudio" preload="none"></audio>
+      </article>
+
+      <!-- BROADWAY -->
+      <div class="broadway-block reveal">
+        <div class="broadway-copy">
+          <h3 class="editorial-title">ALGÚN DÍA <em>✦</em></h3>
+          <p>
+            Uno de mis sueños es viajar a Nueva York y vivir
+            la experiencia de ver musicales en Broadway.
+          </p>
+          <div class="writing-space">
+          Como buena Theater Kid sueño con ver las obras originales de mis musicales favoritos no solo en una pantalla, sino en un escenario. Algún día me gustaría poder verlo. En Londres pude tener la oportunidad de ver un musical oficial de Broadway, una gran oportunidad que me acerca cada vez más a esta meta.
+          </div>
+        </div>
+        <div class="polaroid broadway-polaroid glass-photo"
+          style="--rotation:5deg;--tape:#c5b1ff">
+          <span class="photo-tape"></span>
+          <div class="polaroid-photo photo-box">
+<img src="images/london8.jpeg" alt="Broadway" class="broadway-foto">
+          </div>
+          <span class="polaroid-caption">ONE DAY IN NEW YORK ♡</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="cosmic-divider" aria-hidden="true">✦ ✧ ✦</div>
+
+    <!-- FANDOMS -->
+    <section class="section" id="fandoms">
+      <div class="section-heading reveal">
+        <h2>MIS <em>FANDOMS</em><b>✦</b></h2>
+        <p>Universos e historias que me encantan.</p>
+      </div>
+
+      <div class="fandom-grid">
+        <article class="fandom-entry reveal">
+
+<div class="fandom-visual photo-box">
+    <img src="images/RAVENCLAW.png" alt="Escudo de Ravenclaw">
+</div>
+
+          <h3>RAVENCLAW</h3>
+          <p>Esta es mi casa de Harry Potter, me inspiré en sus colores y temáticas para hacer la estética de esta web. Antes, según el quiz oficial me salió que mi casa era Gryffindor, pero ahora el resultado (después de hacerlo 3 veces) es otro.</p>
+        </article>
+
+
+<article class="fandom-entry reveal">
+    <div class="fandom-visual photo-box">
+        <img src="images/CABAÑA.jpg" alt="Cabaña 6 de Atenea">
+    </div>
+
+    <h3>CABAÑA 6</h3>
+    <p>En este caso soy de la cabaña 6, específicamente de Atenea, mi diosa favorita en la mitología griega.</p>
+</article>
+       
+<article class="fandom-entry fandom-pokemon reveal">
+
+    <div class="pokemon-left">
+
+        <img src="images/pokemon.png"
+             alt="Pokémon"
+             class="pokemon-logo-clasico">
+
+        <p class="pokemon-description">
+        Pokémon es uno de mis universos favoritos.
+        Principalmente me gustan los tipo fuego, como mis favoritos que son Cinderace, Ceruledge y Armarouge
+        </p>
+
+    </div>
+
+    <div class="pokemon-images">
+
+        <div class="photo-box pokemon-image">
+            <img src="images/cinderace.png" alt="Cinderace">
+        </div>
+
+        <div class="photo-box pokemon-image">
+            <img src="images/armarouge.png" alt="Armarouge">
+        </div>
+
+        <div class="photo-box pokemon-image">
+            <img src="images/ceruledge.png" alt="Ceruledge">
+        </div>
+
+    </div>
+
+</article>
+
+        
+<article class="fandom-entry fandom-marvel reveal">
+
+  <img src="images/marvel.png" alt="Marvel" class="marvel-logo">
+
+  <div class="marvel-comic">
+
+    <div class="marvel-panels">
+      <div class="marvel-panel marvel-panel-main active" data-panel="0">
+        <img src="images/moonknight1.jpg" alt="Moon Knight">
+      </div>
+
+      <div class="marvel-panel" data-panel="1">
+        <img src="images/moonknight2.jpg" alt="Moon Knight">
+      </div>
+
+      <div class="marvel-panel" data-panel="2">
+        <img src="images/moonknight3.jpg" alt="Moon Knight">
+      </div>
+    </div>
+
+    <div class="marvel-info">
+      <h3 id="marvel-title">MOON KNIGHT</h3>
+      <p id="marvel-description">
+        Marvel es uno de mis universos favoritos,
+        especialmente por Moon Knight, un personaje
+        lleno de misterio, distintas identidades
+        y una historia relacionada con la mitología egipcia.
+      </p>
+    </div>
+
+  </div>
+</article>
+
+
+
+      </div>
+    </section>
+
+    <div class="cosmic-divider" aria-hidden="true">✧ ✦ ✧</div>
+
+    <!-- INTERESES -->
+    <section class="section" id="intereses">
+      <div class="section-heading reveal">
+        <h2>LO QUE ME <em>APASIONA</em><b>✦</b></h2>
+      </div>
+
+      <div class="programming-block reveal">
+        <h3 class="editorial-title">
+          PROGRAMACIÓN <i class="fa-solid fa-code accent-icon"></i>
+        </h3>
+        <div class="programming-layout">
+          <div>
+            <div class="arena-image photo-box">
+              <img src="img/arena-ia.png" alt="Logo de Arena IA">
+              <div class="photo-placeholder arena-fallback">ARENA IA</div>
+            </div>
+            <div class="writing-space">
+          Después de mi experiencia en el concurso de CODED, la programación y la tecnología me empezaron a llamar mucho la atención y ver las cosas fantásticas que puedo diseñar. Claro esta, que ARENA IA fue un proyecto que me marcó mucho, ya que pude ver un poco de lo que podemos hacer si nos lo proponemos programando, aprendí nuevas cosas y espero que esto no quede aquí y pueda conocer más todo este mundo.
+            </div>
+          </div>
+          <div class="programming-decoration" aria-hidden="true">
+            <span>✧</span><span>✦</span><span>✧</span>
+          </div>
+        </div>
+      </div>
+
+
+
+    <!-- IDIOMASS -->
+    <section class="section" id="idiomas">
+      <div class="section-heading reveal">
+        <h2>IDIOMASS <b>✦</b></h2>
+      </div>
+
+      <div class="language-grid">
+        <article class="language-entry reveal">
+          <h3>BONJOUR !</h3>
+          <h4>FRANÇAIS</h4>
+          <div class="polaroid glass-photo language-polaroid"
+            style="--rotation:-4deg;--tape:#c5b1ff">
+            <span class="photo-tape"></span>
+            <div class="polaroid-photo photo-box">
+
+<img src="images/frances.jpeg" alt="Français" class="idioma-foto">
+
+
+            </div>
+          </div>
+          <p>
+            El francés es uno de los idiomas que más me gusta.
+            He obtenido certificaciones hasta el nivel B1.
+          </p>
+          <div class="writing-space">
+           Cada sábado tengo clases de francés, es mi idioma favorito, se me hace incluso más fácil que el inglés. Actualmente tengo todas las certificaciones hasta el nivel B1 y este 20 de noviembre tengo mi examen internacional en la Alianza Francesa de Lima.
+          </div>
+        </article>
+
+        <article class="language-entry reveal">
+          <h3>HELLO !</h3>
+          <h4>ENGLISH</h4>
+          <div class="polaroid glass-photo language-polaroid"
+            style="--rotation:5deg;--tape:#a6e5df">
+            <span class="photo-tape"></span>
+            <div class="polaroid-photo photo-box">
+<img src="images/ingles.jpeg" alt="Inglés" class="idioma-foto">
+            </div>
+          </div>
+          <p>
+            También disfruto aprender inglés y seguir mejorando
+            mis habilidades con este idioma.
+          </p>
+          <div class="writing-space">
+          Me gusta mucho también el inglés, tengo las certificaciones hasta el nivel B1 y este 28 de noviembre daré mi examen internacional Cambridge para el B2, así podré expandir mis conocimientos y poder dominar más este idioma.
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div class="cosmic-divider" aria-hidden="true">✧ ✦ ✧</div>
+
+    <!-- MASCOTAS -->
+    <section class="section" id="mascotas">
+      <div class="section-heading reveal">
+        <h2>NALA <em>& SIRIUS</em><b>✦</b></h2>
+        <p>Mis dos perros también forman parte de mi historia.</p>
+      </div>
+
+      <div class="pets-gallery">
+        <article class="pet-entry reveal">
+          <div class="polaroid pet-polaroid glass-photo"
+            style="--rotation:-5deg;--tape:#b6a6ff">
+            <span class="photo-tape"></span>
+            <div class="polaroid-photo photo-box">
+                <img src="images/nala.jpeg" alt="Nala" class="pet-photo">
+
+            </div>
+            <span class="polaroid-caption">NALA ♡</span>
+          </div>
+        </article>
+
+        <article class="pet-entry reveal">
+          <div class="polaroid pet-polaroid glass-photo"
+            style="--rotation:5deg;--tape:#a6e5df">
+            <span class="photo-tape"></span>
+            <div class="polaroid-photo photo-box">
+             <img src="images/sirius.jpeg" alt="Sirius" class="pet-photo">
+            </div>
+            <span class="polaroid-caption">SIRIUS ♡</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div class="cosmic-divider" aria-hidden="true">✦ ✧ ✦</div>
+
+    <!-- CHINCHA -->
+    <section class="section" id="raices">
+      <div class="section-heading reveal">
+        <h2>CHINCHA, <em>ICA</em><b>✦</b></h2>
+      </div>
+
+      <div class="roots-layout">
+        <div class="roots-collage reveal">
+          <div class="polaroid roots-main glass-photo"
+            style="--rotation:-3deg;--tape:#f3df9a">
+            <span class="photo-tape"></span>
+            <div class="polaroid-photo photo-box">
+<img src="images/chincha.jpeg" alt="Chincha" class="raices-foto">
+            </div>
+            <span class="polaroid-caption">MY ROOTS ✦</span>
+          </div>
+
+          <div class="polaroid roots-small roots-small-left glass-photo"
+            style="--rotation:8deg;--tape:#c5b1ff">
+            <span class="photo-tape"></span>
+            <div class="polaroid-photo photo-box">
+
+
+
+<img src="images/chincha2.jpeg" alt="Recuerdo de Chincha 2" class="raices-foto">
+
+
+
+            </div>
+          </div>
+
+          <div class="polaroid roots-small roots-small-right glass-photo"
+            style="--rotation:-8deg;--tape:#a6e5df">
+            <span class="photo-tape"></span>
+            <div class="polaroid-photo photo-box">
+
+
+<img src="images/chincha3.jpeg" alt="Recuerdo de Chincha 3" class="raices-foto">
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="roots-copy reveal">
+          <h3>UN LUGAR <span>ESPECIAL</span> PARA MÍ.</h3>
+          <p>
+            Chincha, Ica, es muy importante para mí porque
+            de allí viene toda mi familia. Es parte de mis
+            raíces y de mi historia.
+          </p>
+          <div class="food-card">
+            <i class="fa-solid fa-utensils"></i>
+            <div>
+              <span>MI COMIDA FAVORITA</span>
+              <strong>CARAPULCRA</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="cosmic-divider" aria-hidden="true">✧ ✦ ✧</div>
+
+    <!-- LONDRES A TOKYO -->
+    <section class="section story-section" id="historia">
+      <div class="section-heading reveal">
+        <h2>DE LONDRES <em>A TOKYO</em><b>✦</b></h2>
+        <p>Una experiencia que forma parte de mi historia.</p>
+      </div>
+
+      <div class="story-introduction reveal">
+        <p>
+          Una experiencia relacionada con la programación,
+          los desafíos y nuevas oportunidades.
+        </p>
+        <div class="writing-space">
+          LONDRES FUE MUY EMOCIONANTEE. Cuando fuimos entre todas nos esforzamos mucho para poder sacar adelante el proyecto de Huaico Net, pudimos lograr el 2do puesto que nos garantizó un cupo para Tokyo 2027 y nos emocionamos mucho, fué una experiencia inolvidable y sobretodo, pudimos disfrutar de nuestro esfuerzo y tener grandes propuestas. Estoy muy contenta con todo lo qe pudimos lograr como delegación
+        </div>
+      </div>
+
+      <div class="story-collage reveal">
+        <div class="story-polaroid single" style="--rotation:-8deg;--tape:#c5b1ff">
+          <span class="photo-tape"></span>
+       <div class="photo-box">
+    <img src="images/london.jpeg" alt="Londres 1" class="historia-foto">
+</div>
+        </div>
+
+        <div class="story-polaroid strip-two" style="--rotation:5deg;--tape:#a6e5df">
+          <span class="photo-tape"></span>
+       <div class="photo-box"><img src="images/london2.jpeg" alt="Londres 2" class="historia-foto"></div>
+        <div class="photo-box"><img src="images/london3.jpeg" alt="Londres 3" class="historia-foto"></div>
+        </div>
+
+        <div class="story-polaroid single" style="--rotation:7deg;--tape:#f3df9a">
+          <span class="photo-tape"></span>
+  <div class="photo-box"><img src="images/london4.jpeg" alt="Londres 4" class="historia-foto"></div>
+        </div>
+
+        <div class="story-polaroid strip-three" style="--rotation:-5deg;--tape:#f1a6b1">
+          <span class="photo-tape"></span>
+        <div class="photo-box"><img src="images/london5.jpeg" alt="Londres 5" class="historia-foto"></div>
+        <div class="photo-box"><img src="images/london6.jpeg" alt="Londres 6" class="historia-foto"></div>
+     <div class="photo-box"><img src="images/london7.jpeg" alt="Londres 7" class="historia-foto"></div>
+        </div>
+
+        <div class="story-polaroid single" style="--rotation:6deg;--tape:#a6d6ff">
+          <span class="photo-tape"></span>
+        <div class="photo-box"><img src="images/london8.jpeg" alt="Londres 8" class="historia-foto"></div>
+        </div>
+
+        <div class="story-polaroid strip-two" style="--rotation:-7deg;--tape:#c5b1ff">
+          <span class="photo-tape"></span>
+      <div class="photo-box"><img src="images/london9.jpeg" alt="Londres 9" class="historia-foto"></div>
+        <div class="photo-box"><img src="images/london10.jpeg" alt="Londres 10" class="historia-foto"></div>
+        </div>
+      </div>
+
+      <div class="tokyo-ending reveal">
+        <p>
+          “Espero dar lo mejor de mí en Tokyo y
+          conseguir resultados increíbles.”
+        </p>
+        <h2>TOKYO 2027</h2>
+        <span>✦ ✧ ✦</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <strong>MI WEB ✦</strong>
+    <p>Hecho con curiosidad, creatividad y un poquito de magia.</p>
+    <span id="year"></span>
+  </footer>
+
+  <!-- MODAL DE LIBROS -->
+  <div class="book-modal" id="bookModal" aria-hidden="true">
+    <div class="book-modal-content" role="dialog"
+      aria-modal="true" aria-labelledby="bookModalTitle">
+      <button class="modal-close" id="modalClose"
+        type="button" aria-label="Cerrar">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <h3 id="bookModalTitle"></h3>
+      <p id="bookModalDescription"></p>
+    </div>
+  </div>
+</body>
+
+<!-- AURORAS BOREALES -->
+<div class="aurora-sky" aria-hidden="true">
+  <div class="aurora aurora-left"></div>
+  <div class="aurora aurora-right"></div>
+  <div class="aurora aurora-top"></div>
+</div>
+
+</html>
